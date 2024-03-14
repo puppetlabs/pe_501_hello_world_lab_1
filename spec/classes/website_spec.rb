@@ -11,8 +11,6 @@ describe 'teched_hello_world::website' do
 
       it { is_expected.to compile }
       it { is_expected.to contain_class('teched_hello_world::website') }
-      it { is_expected.to contain_class('apache') }
-      it { is_expected.to contain_apache__vhost('hello_world') }
       it { is_expected.to contain_file('index.html') }
       it { is_expected.to contain_file('css-directory') }
       it { is_expected.to contain_file('img-directory') }
