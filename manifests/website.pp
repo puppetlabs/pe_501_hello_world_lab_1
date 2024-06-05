@@ -15,7 +15,6 @@
 # @example
 #   include teched_hello_world::website
 class teched_hello_world::website {
-
   file { '/var/www/':
     ensure => directory,
     before => [File['index.html'], File['css-directory'], File['img-directory'], File['js-directory']],
